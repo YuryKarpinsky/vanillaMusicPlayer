@@ -1,0 +1,119 @@
+* {
+  box-sizing: border-box;
+}
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3rem;
+}
+img {
+  width: 17rem;
+  height: 17rem;
+  cursor: pointer;
+  transition: 0.7s;
+  border-radius: 3px;
+}
+
+img:hover {
+  transform: scale(1.15);
+  z-index: 2;
+}
+body {
+  background-image: linear-gradient(160deg, rgba(0, 0, 0, 1) 40.3%, white 90%);
+  height: 100vh;
+}
+h2 {
+  font-weight: 100;
+}
+
+.music-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+.main-sign {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 3rem;
+  color: white;
+  font-size: 2rem;
+  margin: 0;
+  font-family: "NeueKabelW01-Thin", sans-serif;
+  font-weight: 100;
+  text-transform: uppercase;
+  letter-spacing: 0;
+  line-height: 3rem;
+}
+.navigation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 6rem 0 6rem;
+  border-radius: 1rem;
+  border: white solid 1px;
+}
+
+.action-button {
+  background: transparent;
+  border: 0;
+  color: rgb(72, 72, 72);
+  cursor: pointer;
+  margin: 0.8rem;
+}
+
+.action-btn-big {
+  font-size: 1.65rem;
+}
+
+#gift {
+  margin: 0 4rem 0 4rem;
+}
+#title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.player {
+  margin-top: 7rem;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 63rem;
+}
+.musicInfo {
+  font-family: "NeueKabelW01-Thin", sans-serif;
+  display: flex;
+  justify-content: center;
+  /* background-image: linear-gradient(168deg, rgba(0, 0, 0, 1) 40.3%, white 90%); */
+  width: 20rem;
+  opacity: 0;
+
+  transition: 3s;
+}
+.music-container.play .musicInfo {
+  opacity: 1;
+  transform: scale(1.2);
+  z-index: 1.5;
+}
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 5px;
+  width: 90%;
+}
+
+.progress {
+  background-color: #fe8daa;
+  border-radius: 5px;
+  height: 100%;
+  width: 0%;
+  transition: width 0.1s linear;
+}

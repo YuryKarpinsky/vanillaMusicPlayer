@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Player</title>
+    <link
+      href="//db.onlinewebfonts.com/c/106e173218d454b90921e22332746eaa?family=NeueKabelW01-Thin"
+      rel="stylesheet"
+      type="text/css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+      integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <div class="wrapper">
+    <body>
+      <div class="main-sign"><h2>Choose a song</h2></div>
+      <div class="image-container">
+        <img src="covers/heroin.jpg" alt="heroin-cover" id="heroin" />
+        <img src="covers/gift.jpg" alt="gift-cover" id="gift" />
+        <img src="covers/jesus.jpg" alt="jesus-cover" id="jesus" />
+      </div>
+
+      <div class="music-container">
+        <div class="player">
+          <div class="musicInfo">
+            <h3 id="title">The Velvet Underground - Heroin</h3>
+          </div>
+          <div class="progress-container">
+            <div class="progress"></div>
+          </div>
+          <audio src="The Gift.mp3" id="audio"></audio>
+          <div class="navigation">
+            <button id="prev" class="action-button">
+              <i class="fas fa-backward"></i>
+            </button>
+            <button id="play" class="action-button action-btn-big">
+              <i class="fas fa-play"></i>
+            </button>
+            <button id="next" class="action-button">
+              <i class="fas fa-forward"></i>
+            </button>
+          </div>
+        </div>
+      </div>
+      <script src="script.js"></script>
+    </body>
+  </div>
+</html>
